@@ -20,8 +20,8 @@
   <div class="blogs-teaser-list">
     <#list entries as curBlogEntry>
 
-      <#assign assetRenderer = entry.getAssetRenderer() />
-      <#assign viewURL = assetPublisherHelper.getAssetViewURL(renderRequest, renderResponse, entry) />
+      <#assign assetRenderer = curBlogEntry.getAssetRenderer() />
+      <#assign viewURL = assetPublisherHelper.getAssetViewURL(renderRequest, renderResponse, curBlogEntry) />
 
       <#if assetLinkBehavior != "showFullContent">
         <#assign viewURL = assetRenderer.getURLViewInContext(renderRequest, renderResponse, viewURL) />
@@ -33,10 +33,10 @@
       <div class="entry-item">
         <a class="entry-link" href="${viewURL}">
           <div class="entry-date">
-            ${dateUtil.getDate(entry.getPublishDate(), "yyyy-MM-dd", locale)}
+            ${dateUtil.getDate(curBlogEntry.getPublishDate(), "yyyy-MM-dd", locale)}
           </div>
           <div class="entry-title">
-            ${htmlUtil.escape(entry.getTitle())}
+            ${htmlUtil.escape(curBlogEntry.getTitle())}
           </div>
         </a>
       </div>
