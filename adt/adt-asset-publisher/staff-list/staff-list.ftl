@@ -87,38 +87,53 @@
           <#assign categoryClassNames = categoryClassNames + " " + categoryClassName />
         </#list>
 
-        <div class="person ${categoryClassNames}">
-          <div class="person-inner">
+        <div class="block display-option-50 kivpersonblock">
 
-            <img src="${imageUrl}" alt="${firstName} ${lastName}" />
-
-            <div class="person-info">
-
-              <h2>${firstName} ${lastName}</h2>
-
-              <#if jobTitle?has_content>
-                <div>${jobTitle}</div>
-              </#if>
-              <#if email?has_content>
+          <div class="person ${categoryClassNames} contact-info-wrap">
+            <div>
               <div>
-                <a href="mailto:${email}">
-                  ${email}
-                </a>
+                <div>
+                  <h2>${firstName} ${lastName}</h2>
+
+
+                  <#if jobTitle?has_content>
+                    <div>
+                      <span>${jobTitle}</span>
+                    </div>
+                  </#if>
+                </div>
               </div>
-              </#if>
-              <#if phone?has_content>
-                <div>${phone}</div>
-              </#if>
-
-              <#if linkUrl?has_content && linkLabel?has_content>
-                <a href="${linkUrl}">${linkLabel}</a>
-              </#if>
-
             </div>
 
+            <div class="block-row">
+              <div class="media">
+                <i class="icon icon-phone"></i>
+
+                <div class="media-body">
+                  <b>Telefonnummer</b>
+                  <div>
+                    <span>Mobil: </span><a href="tel:${phone}" title="Mobil number">${phone}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="block-row">
+              <div class="media">
+                <i class="icon icon-envelope"></i>
+
+                <div>
+                  <b>E-post</b>
+                  <div>
+                    <a href="mailto:${email}">
+                      ${email}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
 
       </#list>
   </#if>

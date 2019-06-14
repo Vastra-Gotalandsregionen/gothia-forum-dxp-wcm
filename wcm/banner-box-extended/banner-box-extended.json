@@ -1,21 +1,21 @@
 {
     "availableLanguageIds": [
-        "en_US"
+        "sv_SE"
     ],
-    "defaultLanguageId": "en_US",
+    "defaultLanguageId": "sv_SE",
     "fields": [
         {
             "label": {
-                "en_US": "Bild"
+                "sv_SE": "Bild"
             },
             "predefinedValue": {
-                "en_US": ""
+                "sv_SE": ""
             },
             "style": {
-                "en_US": ""
+                "sv_SE": ""
             },
             "tip": {
-                "en_US": "Välj bild i bildgalleriet."
+                "sv_SE": "Välj bild i bildgalleriet."
             },
             "dataType": "document-library",
             "fieldNamespace": "ddm",
@@ -30,16 +30,16 @@
             "nestedFields": [
                 {
                     "label": {
-                        "en_US": "Bildlänk"
+                        "sv_SE": "Bildlänk"
                     },
                     "predefinedValue": {
-                        "en_US": ""
+                        "sv_SE": ""
                     },
                     "style": {
-                        "en_US": ""
+                        "sv_SE": ""
                     },
                     "tip": {
-                        "en_US": "Skriv in länk till sida dit användaren kommer om denne klickar på bilden."
+                        "sv_SE": "Skriv in länk till sida dit användaren kommer om denne klickar på bilden."
                     },
                     "dataType": "string",
                     "indexType": "keyword",
@@ -53,16 +53,16 @@
                 },
                 {
                     "label": {
-                        "en_US": "Beskrivning av bildens innehåll"
+                        "sv_SE": "Beskrivning av bildens innehåll"
                     },
                     "predefinedValue": {
-                        "en_US": ""
+                        "sv_SE": ""
                     },
                     "style": {
-                        "en_US": ""
+                        "sv_SE": ""
                     },
                     "tip": {
-                        "en_US": "Skriv in en beskrivning av bildens innehåll- presenteras för t.ex. sökmotorer och besökare med s.k. screen readers (synskadade i regel)."
+                        "sv_SE": "Skriv in en beskrivning av bildens innehåll- presenteras för t.ex. sökmotorer och besökare med s.k. screen readers (synskadade i regel)."
                     },
                     "dataType": "string",
                     "indexType": "keyword",
@@ -76,16 +76,16 @@
                 },
                 {
                     "label": {
-                        "en_US": "Öppna länk i nytt fönster (eller tabb)"
+                        "sv_SE": "Öppna länk i nytt fönster (eller tabb)"
                     },
                     "predefinedValue": {
-                        "en_US": false
+                        "sv_SE": false
                     },
                     "style": {
-                        "en_US": ""
+                        "sv_SE": ""
                     },
                     "tip": {
-                        "en_US": "Välj om länken skall öppnas i ett nytt fönster (eller tabb)"
+                        "sv_SE": "Välj om länken skall öppnas i ett nytt fönster (eller tabb)"
                     },
                     "dataType": "boolean",
                     "indexType": "keyword",
@@ -99,16 +99,16 @@
                 },
                 {
                     "label": {
-                        "en_US": "Youtube videoId"
+                        "sv_SE": "Youtube videoId"
                     },
                     "predefinedValue": {
-                        "en_US": ""
+                        "sv_SE": ""
                     },
                     "style": {
-                        "en_US": ""
+                        "sv_SE": ""
                     },
                     "tip": {
-                        "en_US": "Skriv in videoId för den Youtube-film du vill visa upp."
+                        "sv_SE": "Skriv in videoId för den Youtube-film du vill visa upp."
                     },
                     "dataType": "string",
                     "indexType": "keyword",
@@ -124,16 +124,16 @@
         },
         {
             "label": {
-                "en_US": "Brödtext"
+                "sv_SE": "Brödtext"
             },
             "predefinedValue": {
-                "en_US": ""
+                "sv_SE": ""
             },
             "style": {
-                "en_US": ""
+                "sv_SE": ""
             },
             "tip": {
-                "en_US": ""
+                "sv_SE": ""
             },
             "dataType": "html",
             "fieldNamespace": "ddm",
